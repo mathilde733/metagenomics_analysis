@@ -1,6 +1,12 @@
+<p align="center">
+  <img src="https://cdn.unifr.ch/uf/v2.4.5/gfx/logo.png" width="200" alt="Logo Université de Fribourg">
+</p>
+
 # Bachelor's Thesis
 ## Metagenomics Analysis of wheat rhizosphere samples collected in Algeria 
 
+Code is available under the MIT license. \
+I would like to express my gratitude to **Professor Dr. Laurent Falquet (UniFr, Swiss Institute of Bioinformatics)** for allowing me to be a part of his team. I am sincerely thankful to **PhD. Jeferyd Yepes Garcia (UniFr)** for the valuable assistance provided throughout my thesis, and his kindness. Special thanks to Dr. Bilal Rahmoune (ENSA) for facilitating sample collection in Algeria and enabling collaboration during this project.
 
 ### Abstract
 This thesis provides an **overview of the advantages of bioinformatics research by highlighting its importance in addressing evolving climatic conditions and the necessity of developing sustainable agriculture**. Specifically, it focuses on the supplementation of nitrogen and phosphate at various concentration on Triticum aestivum (wheat) cultures. It seems that the varieties do not affect significantly the microbial composition of the rhizosphere Velázquez-Sepúlveda I et al., (2011) but the treatments (meaning the different ratios of supplementation) do have an effect. However, the influence of previous crop remains largely unknown and further analysis are required. As described in the paper written by Zerrouk et al., (2022) the **importance of the wheat production is worldwide recognized, yet its vulnerability varies across regions**. The necessity to develop strategies to deal with the global warming’s impact on agriculture is based on the development of sustainable supplement that help plants with the extreme environmental conditions. That is why this thesis is a part of a more global research about strategies against periods of extreme climatic conditions. 
@@ -11,7 +17,7 @@ The data comes from various cultures of Triticum aestivum (wheat) listed as a ta
 ### Pipeline
 - Quality Control and cleaning of the data using FastQC, fastp (Shifu Chen et al., 2018), MultiQC \
   Corresponding scripts: run-fastqc.sh; run_fastp.sh; run_multiqc.sh
-- Metagenome assembly: co-assembly of the triplicates with **nfcore-mag pipeline** in Nextflow (Krakau et al., 2022) and Ewels et al., 2020) \
+- Metagenome assembly: co-assembly of the triplicates with **nfcore-mag pipeline** in Nextflow (Krakau et al., 2022 and Ewels et al., 2020) \
   Corresponding scripts: {SAMPLE}sbatch_run_nf-core-mag.sh 
 - Taxonomic annotation using BIgMAG dashboard \
   Corresponding scripts: sbatch_mag_flow \
