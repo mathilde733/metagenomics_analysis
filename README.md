@@ -18,9 +18,15 @@ The data comes from various cultures of Triticum aestivum (wheat) listed as a ta
 - Quality Control and cleaning of the data using FastQC, fastp (Shifu Chen et al., 2018), MultiQC \
   Corresponding scripts: run-fastqc.sh; run_fastp.sh; run_multiqc.sh
 - Metagenome assembly: co-assembly of the triplicates with **nfcore-mag pipeline** in Nextflow (Krakau et al., 2022 and Ewels et al., 2020) \
-  Corresponding scripts: {SAMPLE}sbatch_run_nf-core-mag.sh 
-- Taxonomic annotation using BIgMAG dashboard \
-  Corresponding scripts: sbatch_mag_flow \
+<p align="center">
+  <img src="https://raw.githubusercontent.com/nf-core/mag/2.5.1//docs/images/mag_workflow.png" width="600" alt="Workflow of Nextflow">
+</p>
+  Corresponding scripts: {SAMPLE}sbatch_run_nf-core-mag.sh. You can find more details on the pipeline on the [nf-core/mag website](https://nf-co.re/mag/2.5.1/) and on the [GitHub](https://github.com/nf-core/mag/tree/2.5.1)
+- Taxonomic annotation using BIgMAG dashboard (Yepes-Garcia et al, 2024) \
+  <p align="center">
+  <img src="https://github.com/jeffe107/BIgMAG/raw/main/assets/BIGMAG.png" width="200" alt="Logo BIGMAG">
+</p>
+Corresponding scripts: sbatch_mag_flow \
   Link to the github: [BIgMAG dashboard](https://github.com/jeffe107/BIgMAG.git)
 - Direct read taxonomic classification: Kraken/Bracken pipeline (Lu et al. 2022), LEfSeR, PCoA and ANOVA analysis in R \
   Corresponding scripts: job_{SAMPLE}.gz.sbatch
@@ -30,7 +36,8 @@ The data comes from various cultures of Triticum aestivum (wheat) listed as a ta
   - [Ewels et al., 2020](https://doi.org/10.1038/s41587-020-0439-x)
   - [Lu et al., 2022](https://doi.org/10.1038/s41596-022-00738-y)
   - [Shifu Chen et al., 2018](https://doi.org/10.1093/bioinformatics/bty560)
-  - Velázquez-Sepúlveda I et al., (2011), *« Bacterial diversity associated with the rhizosphere of wheat plants (Triticum aestivum): Toward a metagenomic analysis »* 81 (2012): 81‑87.
+  - [Velázquez-Sepúlveda I et al., (2011)](https://doi.org/10.32604/phyton.2012.81.081), *« Bacterial diversity associated with the rhizosphere of wheat plants (Triticum aestivum): Toward a metagenomic analysis »* 81 (2012): 81‑87.
   - [Zerrouk et al., 2022](https://doi.org/10.35516/jjas.v18i4.813)
+  - [Yepes-García J, Falquet L, 2024](https://doi.org/10.12688/f1000research.152290.2)
   
   
