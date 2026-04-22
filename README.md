@@ -21,13 +21,15 @@ The data comes from various cultures of Triticum aestivum (wheat) listed as a ta
 <p align="center">
   <img src="https://raw.githubusercontent.com/nf-core/mag/2.5.1//docs/images/mag_workflow.png" width="600" alt="Workflow of Nextflow">
 </p>
-  Corresponding scripts: {SAMPLE}sbatch_run_nf-core-mag.sh. You can find more details on the pipeline on the [nf-core/mag website](https://nf-co.re/mag/2.5.1/) and on the [GitHub](https://github.com/nf-core/mag/tree/2.5.1)
-- Taxonomic annotation using BIgMAG dashboard (Yepes-Garcia et al, 2024) \
+
+Corresponding scripts: {SAMPLE}sbatch_run_nf-core-mag.sh. You can find more details on the pipeline on the [nf-core/mag website](https://nf-co.re/mag/2.5.1/) and on the [GitHub](https://github.com/nf-core/mag/tree/2.5.1)
+- Taxonomic annotation using BIgMAG dashboard (Yepes-Garcia et al, 2024) 
   <p align="center">
   <img src="https://github.com/jeffe107/BIgMAG/raw/main/assets/BIGMAG.png" width="200" alt="Logo BIGMAG">
 </p>
-Corresponding scripts: sbatch_mag_flow \
-  Link to the github: [BIgMAG dashboard](https://github.com/jeffe107/BIgMAG.git)
+
+Corresponding scripts: sbatch_mag_flow 
+Link to the github: [BIgMAG dashboard](https://github.com/jeffe107/BIgMAG.git)
 - Direct read taxonomic classification: Kraken/Bracken pipeline (Lu et al. 2022), LEfSeR, PCoA and ANOVA analysis in R \
   Corresponding scripts: job_{SAMPLE}.gz.sbatch
 
